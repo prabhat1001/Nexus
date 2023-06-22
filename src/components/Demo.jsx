@@ -35,10 +35,19 @@ const Demo = () => {
 
       setArticle(newArticle);
       setAllArticles(updatedAllArticles);
-      
+    
       localStorage.setItem("articles", JSON.stringify(updatedAllArticles));
     }
   };
+
+
+  const handleRemove = (articleUrl) => {
+    const updatedAllArticles = allArticles.filter((item) => item.url !== articleUrl);
+    setAllArticles(updatedAllArticles);
+    localStorage.setItem("articles", JSON.stringify(updatedAllArticles));
+  }
+
+
 
   const handleCopy = (copyUrl) => {
       setCopied(copyUrl);
@@ -101,6 +110,12 @@ const Demo = () => {
                 <p className="flex-1 font-satoshi text-blue-700 font-medium text-sm truncate">
                   {item.url}
                 </p>
+                <div className="cross_btn" onClick={()=>handleRemove(item.url)}>
+                  <img 
+                    src="/cross.png"
+                    className="w-[40%] h-[40%] object-contain"
+                  />
+                </div>
               </div>
             ))}
         </div>
@@ -120,11 +135,11 @@ const Demo = () => {
           ) : (
             article.summary && (
               <div className="flex flex-col gap-3">
-                <h2 className="font-satoshi font-bold text-gray-600 text-xl">
+                <h2 className="font-satoshi font-bold text-gray-400 sm:text-xl text-xl">
                   Article <span className="blue_gradient">Summary</span>
                 </h2>
                 <div className="summary_box">
-                  <p className="font-inter font-mediumtext-sm text-gray-700">{article.summary}</p>
+                  <p className="font-inter font-mediumtext-sm text-gray-200">{article.summary}</p>
                 </div> 
               </div>
             )

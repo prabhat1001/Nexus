@@ -1,10 +1,10 @@
-import {logo} from '../assets';
+
 
 const Hero = () => {
   return (
     <header className="w-full flex justify-center items-center flex-col ">
         <nav className="flex justify-between items-center w-full mb-10 pt-3">
-            <img src={logo} alt="logo" className="w-28 object-contain"/>
+            <img src="./new-logo.png" alt="logo" className="w-28 object-contain"/>
             <button 
                 type='button' 
                 onClick={()=>{
@@ -17,10 +17,10 @@ const Hero = () => {
         </nav>
         <h1 className='head_text'>
             Summarize Articles with <br className='max-md:hidden'/>
-            <span className='orange_gradient'>OpenAI GPT-4</span>
+            <span className='purple_gradient'>OpenAI GPT-4</span>
         </h1>
         <h2 className="desc">
-            Simplify your reading with Sumz, an open-source article summarizer that transforms lengthy articles into clear and concise summaries.
+            Simplify your reading with <span className="text-white ">NEXUS</span>, an open-source article summarizer that transforms lengthy articles into clear and concise summaries.
         </h2>
     </header>
   )
