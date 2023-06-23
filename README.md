@@ -31,10 +31,6 @@ Welcome to NEXUS, an incredible AI-powered web application that utilizes the cut
 3. Click the "Summarize" button, and within moments, NEXUS will generate a concise summary of the article.
 
 
-## License
 
-NEXUS is released under the [MIT License](https://opensource.org/licenses/MIT). You are free to use, modify, and distribute this software for personal or
-
- commercial purposes.
 
 
