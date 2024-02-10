@@ -14,7 +14,7 @@ Welcome to NEXUS, an incredible AI-powered web application that utilizes the cut
 
 - **Tailwind CSS**: The project is styled using Tailwind CSS, a utility-first CSS framework. Tailwind CSS enables rapid development and customization, giving NEXUS a visually appealing and modern look.
 
-## Access it
+## Access it ( 📍 Live Links )
 
 🔴 [Vercel](https://nexus-rho.vercel.app/)
 
